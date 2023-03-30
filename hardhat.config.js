@@ -1,6 +1,22 @@
-require("@nomicfoundation/hardhat-toolbox");
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
+import dotenv from "dotenv";
+dotenv.config();
 
-/** @type import('hardhat/config').HardhatUserConfig */
-module.exports = {
+const config = {
   solidity: "0.8.18",
+
+  networks:{
+    hardhat:{
+
+    },
+    
+    goerli :{
+      url:process.env.HTTP_URL,
+      
+      accounts:[process.env.PRIVATE_KEY]
+    }
+  },
 };
+
+export default config;
