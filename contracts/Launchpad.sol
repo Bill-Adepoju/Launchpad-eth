@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: william
 
+// deployed on goerli to 0x816f07A2dd36deF6296c337633f9097cad36D18c
+
 pragma solidity 0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
